@@ -1,22 +1,22 @@
-#variable "compartment_ocid" {
-   # default = "ocid1.compartment.oc1..aaaaaaaanw2un33l7dsxqgxex7ulxr23xfbu4wwskfjkvwgrjienqarxvxta"
-#}
+variable "compartment_ocid" {
+   default = "ocid1.compartment.oc1..aaaaaaaanw2un33l7dsxqgxex7ulxr23xfbu4wwskfjkvwgrjienqarxvxta"
+}
 #variable "region" {
    # default = "us-phoenix-1"
 #}
 
-#variable "bucket_name" {
- #   default = "resource_manager_demo_bucket"
-#}
+variable "bucket_name" {
+   default = "resource_manager_demo_bucket"
+}
 
 
 /*variable "bucket_namespace" {
    default = "axhfmvdnwcm7"
 }*/
 
-variable "compartment_ocid" {}
+/*variable "compartment_ocid" {}*/
 variable "region" {}
-variable "bucket_name" {}
+/*variable "bucket_name" {}*/
 
 provider "oci" {
   region = var.region
