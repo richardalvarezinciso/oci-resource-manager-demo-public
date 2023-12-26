@@ -1,12 +1,19 @@
 name: oci-terraform-build-stack
+
 on:
   push:
-    tags:
-      - "v*"
+    branches: [ "main" ]
+  
+    # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+    
 jobs:
-  build-stack:
+  build:
+    
     name: Build Stack
+    
     runs-on: ubuntu-latest
+    
     steps:
 
       - name: 'Checkout'
